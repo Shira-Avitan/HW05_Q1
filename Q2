@@ -1,0 +1,26 @@
+// students to classes
+namespace ShiraA221219
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {              
+        
+ Console.WriteLine("please enter number of students");
+            string sAsString = Console.ReadLine();
+            int students = Convert.ToInt32(sAsString);
+
+            int s100 = students / 100;
+            students = students % 100;
+            int s30 = students / 30;
+            students = students % 30;
+            int s10 = students / 10;
+            students = students % 10;
+            int back = students;
+
+            Console.WriteLine($"100 X {s100}\n 30 X {s30}\n 10 X {s10}\n students going home = {back}");
+            Console.WriteLine();
+            
+            }
+        }
+     }
