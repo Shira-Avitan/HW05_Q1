@@ -1,0 +1,22 @@
+//prime number
+Console.WriteLine("please enter number");
+            String nAsString = Console.ReadLine();
+            int num1 = Convert.ToInt32(nAsString);
+
+            for (int i = 2; i <= num1; i++)
+            {
+                if (num1 % i == 0)
+                {
+                    Console.WriteLine("number is not prime");
+
+                }
+                else if(num1 % i != 0)
+                {
+                    Console.WriteLine("number is prime");
+                    break;
+
+                }
+                Console.WriteLine("please enter number");
+                 nAsString = Console.ReadLine();
+                 num1 = Convert.ToInt32(nAsString);
+            }
