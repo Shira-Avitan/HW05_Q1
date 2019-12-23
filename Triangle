@@ -1,0 +1,14 @@
+//triangle
+Console.WriteLine("please enter number");
+            string numAsString = Console.ReadLine();
+            int num = Convert.ToInt32(numAsString);
+
+            for (int i = 1; i <= num; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(j);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
